@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>profile</title>
+	<link rel="stylesheet" type="text/css" href="profile.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<script type="text/javascript">
+		function sample()
+		{
+			document.getElementById("button").innerHTML="Hey, hello!!!";
+			var body=document.querySelector("#center");
+			console.log(body);
+			var p=document.createElement("p");
+			body.appendChild(p);
+			p.textContent="This paragraph element is created using dom .";
+			p.style.color="brown";
+			p.style.textDecoration="underline";
+			p.style.fontSize="large";
+		}
+	</script>
+
+</head>
+<body id="root">
+	<center id="center"><button type="button" onclick="sample()">Click here!</button>
+		<h2 id="button" style="background-color: white; width: 30% "></h2></center>
+	<section id="super">
+		<div class="sub" id="1" style="margin-bottom: 40%; text-align: center;position: fixed;margin-right: 60%">
+			<img src="j.jpeg" height="40%" width="40%">
+			<h2>ajithrahul</h2>
+			<p>second Year Student</p>
+			<p>9912349947</p>
+			<p>ajith.vemana@gmail.com</p>
+			<p>p.gannavaram</p>
+		</div>
+		<div class="sub" style="margin-left: 40%">
+			<h1>Carrier Objective</h1>
+			<p>To become a software engineer</p>
+			<hr>
+			<h1>Educational Details</h1>
+			<table border="1px">
+				<tr>
+					<th>Sno</th>
+					<th>Institute</th>
+					<th>course</th>
+					<th>yop</th>
+					<th>per</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>LBRCE</td>
+					<td>Btech</td>
+					<td>2018</td>
+					<td>67</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>NARAYANA junior college</td>
+					<td>Inter</td>
+					<td>2016</td>
+					<td>89</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>SASI public school</td>
+					<td>SSC</td>
+					<td>2015</td>
+					<td>88</td>
+				</tr>
+			</table>
+			<h1>Skills</h1>
+			<ul>
+				<li>C</li>
+				<li>C++</li>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>Java</li>
+			</ul>
+			<h1>Hobbies</h1>
+			<ul type="circle">
+				<li>playing volleyball</li>
+				<li>Sketching books</li>
+				<li>listening music</li>
+			</ul>
+		</div>
+	</section>
+
+</body>
+</html>
